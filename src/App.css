@@ -1,0 +1,44 @@
+.tx{
+  color: aliceblue;
+}
+.inc{
+  margin-right: 5px;
+}
+.dic{
+  margin-left: 5px; 
+}
+.cn{
+  margin-left: 140px;
+}
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.ao{
+  /* background-color: blueviolet; */
+  width: 900px;   
+}
+.fdv{
+  /* background-color: aqua; */
+  display: inline-block;
+  margin: 19px;  
+  border: 1px rgb(238, 238, 237) double;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+.fdv:hover{
+  transform: scale(1.1);
+}
+.sdv{
+  background-color: black;
+  text-align: center;
+  font-size: 15px;
+  width: 166px;
+  padding: 1px;
+}
