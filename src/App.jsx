@@ -11,12 +11,13 @@ import { Mf } from './Mycompanent/map&filter'
 import { Home } from './first project/main_comp'
 import { Ueff,Clef } from './Mycompanent/ueff'
 import { Fetch } from './Mycompanent/fetching'
+import { Form } from './Mycompanent/form_headling'
 
 function App() {
   let name = "Mit Yadav";
   return (
     <>
-      <Fetch/>
+      <Form/>
     </>
   )
 }
