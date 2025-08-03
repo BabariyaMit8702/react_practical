@@ -14,7 +14,7 @@ function App() {
   let name = "Mit Yadav";
   return (
     <>
-      <Home/>
+      <h3>{name}</h3>
     </>
   )
 }
