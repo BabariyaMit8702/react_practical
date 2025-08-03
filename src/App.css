@@ -42,3 +42,24 @@
   width: 166px;
   padding: 1px;
 }
+.container2{
+    width: 1000px;
+    justify-content: center;
+}
+.obj{
+  display: inline-block;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+.obj:hover{
+  transform: scale(0.9);
+}
+.img{
+  display: inline-block;
+  border: 2px solid rgb(0, 255, 157);
+}
+.btn{
+  margin: 20px;
+}
