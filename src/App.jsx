@@ -12,12 +12,13 @@ import { Home } from './first project/main_comp'
 import { Ueff,Clef } from './Mycompanent/ueff'
 import { Fetch } from './Mycompanent/fetching'
 import { Form } from './Mycompanent/form_headling'
+import { Multi_input } from './Mycompanent/multi_input'
 
 function App() {
   let name = "Mit Yadav";
   return (
     <>
-      <Form/>
+      <Multi_input/>
     </>
   )
 }
