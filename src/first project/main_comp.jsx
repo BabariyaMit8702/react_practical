@@ -19,6 +19,7 @@ export const Home = () => {
   const kal = () => {
     setm_arr(movie_list)
   }
+  document.title = 'movies'
   return (
     <>
       <Navbar func={kw} alf={kal}/>

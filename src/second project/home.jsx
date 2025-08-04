@@ -62,6 +62,7 @@ export const Home2 = () => {
   const ccun = (city) => {
     setarea(city);
   }
+  document.title = 'foods'
   return (
     <>
       <center>

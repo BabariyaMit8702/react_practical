@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../App.css'
 
 export const Navbar = ({func,alf}) => {
     const csn = {
@@ -11,17 +12,14 @@ export const Navbar = ({func,alf}) => {
     return (
         <>
              <div style={csn}>
-        <button onClick={alf} type="button" class="btn btn-light">All</button>
-        <button onClick={() => func('Action')} type="button" class="btn btn-primary">Action</button>
-        <button onClick={() => func('Thriller')} type="button" class="btn btn-secondary">Thrillor</button>
-        <button onClick={() => func('Drama')} type="button" class="btn btn-success">Drama</button>
-        <button onClick={() => func('Horror')} type="button" class="btn btn-danger">Horror</button>
-        <button onClick={() => func('Animation')} type="button" class="btn btn-warning">Animation</button>
-        <button onClick={() => func('Sci-Fi')} type="button" class="btn btn-info">Sci-Fi</button>
+        <button onClick={alf} type="button" className="mm btn btn-light">All</button>
+        <button onClick={() => func('Action')} type="button" className="mm btn btn-primary">Action</button>
+        <button onClick={() => func('Thriller')} type="button" className="mm btn btn-secondary">Thrillor</button>
+        <button onClick={() => func('Drama')} type="button" className="mm btn btn-success">Drama</button>
+        <button onClick={() => func('Horror')} type="button" className="mm btn btn-danger">Horror</button>
+        <button onClick={() => func('Animation')} type="button" className="mm btn btn-warning">Animation</button>
+        <button onClick={() => func('Sci-Fi')} type="button" className="btn mm btn-info">Sci-Fi</button>
       </div>
-      <center>
-        <button className='btn btn-outline-light'><Link to={'/'} style={{textDecoration:'none' }} >Home</Link></button>
-      </center>
         </>
     )
 }
