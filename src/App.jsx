@@ -14,12 +14,20 @@ import { Fetch } from './Mycompanent/fetching'
 import { Form } from './Mycompanent/form_headling'
 import { Multi_input } from './Mycompanent/multi_input'
 import { Home2 } from './second project/home'
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import { Main_home } from './assets/main_home'
 
 function App() {
   let name = "Mit Yadav";
   return (
     <>
-      <Home2/>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Main_home/>} />
+        <Route path='movies/' element={<Home/>}/>
+        <Route path='foods' element={<Home2/>}/>
+      </Routes>
+    </BrowserRouter>
     </>
   )
 }

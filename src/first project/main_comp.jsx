@@ -22,7 +22,7 @@ export const Home = () => {
   return (
     <>
       <Navbar func={kw} alf={kal}/>
-      <br></br><br></br>
+      <br></br>
       <div className='container'>
         <div className='ao'>
           {m_arr.map((moves) =>

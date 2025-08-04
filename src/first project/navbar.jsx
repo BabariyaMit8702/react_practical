@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Navbar = ({func,alf}) => {
     const csn = {
@@ -18,6 +19,9 @@ export const Navbar = ({func,alf}) => {
         <button onClick={() => func('Animation')} type="button" class="btn btn-warning">Animation</button>
         <button onClick={() => func('Sci-Fi')} type="button" class="btn btn-info">Sci-Fi</button>
       </div>
+      <center>
+        <button className='btn btn-outline-light'><Link to={'/'} style={{textDecoration:'none' }} >Home</Link></button>
+      </center>
         </>
     )
 }

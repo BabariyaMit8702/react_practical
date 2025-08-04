@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Nav = ({func}) => {
   return (
@@ -11,7 +12,8 @@ export const Nav = ({func}) => {
           <button onClick={() => func('Thai')} type="button" className="btn btn-outline-danger">Thai</button>
           <button onClick={() => func('British')} type="button" className="btn btn-outline-warning">British</button>
           <button onClick={() => func('Russian')} type="button" className="btn btn-outline-info">Russian</button>
-
+        <br></br>
+        <button className='btn btn-outline-light'><Link to={'/'} style={{textDecoration:'none' }} >Home</Link></button>
         </div>
     </center>
     </>
