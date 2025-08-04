@@ -29,7 +29,7 @@ function App() {
         <Route path='movies/' element={<Home/>}/>
         <Route path='foods' element={<Home2/>}/>
         <Route path='courses/' element={<Courses/>}/>
-        <Route path='courses/:id' element={<Course_details/>}/>
+        <Route path='courses/:c_id' element={<Course_details/>}/>
       </Routes>
     </BrowserRouter>
     </>
