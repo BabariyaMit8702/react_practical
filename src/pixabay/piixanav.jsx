@@ -1,12 +1,22 @@
 import React from 'react'
 import { useState } from 'react'
 import '../App.css'
+import { useContext } from 'react'
+import staty from './created_context'
 
 export const Piixanavbar = () => {
-        document.title = 'PIXABAY'
+    document.title = 'PIXABAY'
+    let pd = useContext(staty);
+    const cc = (ccc) => {
+        pd.setpxc(ccc)
+    }
+    const changepxc = (e) => {
+        let text = e.target.value
+        pd.setpxc(text)
+    }
     return (
         <>
-        
+
             <div className="dropdown-modern">
                 <input type="checkbox" id="modern-toggle" />
                 <label htmlFor="modern-toggle" className="dropdown-modern-label">
@@ -15,20 +25,26 @@ export const Piixanavbar = () => {
                 </label>
 
                 <ul className="dropdown-modern-menu">
-                    <li>
-                        <span className="dropdown-icon" /> Profile
+                    <li onClick={() => cc('fashion')}>
+                        <span className="dropdown-icon" /> Fashion
                     </li>
-                    <li>
-                        <span className="dropdown-icon" /> Settings
+                    <li onClick={() => cc('india')}>
+                        <span className="dropdown-icon" />India
                     </li>
-                    <li>
-                        <span className="dropdown-icon" /> Logout
+                    <li onClick={() => cc('news')}>
+                        <span className="dropdown-icon"/> News
+                    </li>
+                    <li onClick={() => cc('nature')}>
+                        <span className="dropdown-icon" /> Nature
+                    </li>
+                    <li onClick={() => cc('government')}>
+                        <span className="dropdown-icon" /> Government
                     </li>
                 </ul>
 
             </div>
-            <span style={{paddingLeft:'800px'}}> 
-                <input type='text' placeholder='&#128269; Search' />
+            <span style={{ paddingLeft: '800px' }}>
+                <input type='text' name='input_search' placeholder='&#128269; Search' onChange={changepxc} />
             </span>
         </>
     )

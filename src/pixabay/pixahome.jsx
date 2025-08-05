@@ -11,14 +11,17 @@ export const Pixahome = () => {
             <Piixanavbar />
             <br /><br /><br />
             <center>
-                <p>name = {pd.name} </p>
-                <p>caste = {pd.caste} </p>
-                <hr></hr>
-                {pd.arr.map((i) => <div key={i.id}>
-                    <div>
-                        <img src={i.webformatURL} alt="NOT FOUND" />
-                    </div>
-                </div>)}
+                <div id='pxcont'>
+                {pd.arr.length == 0 ? 
+                <p>WE FAILED TO FIND {pd.pxc}'s IMAGES FROM OUR DATA</p>
+                :
+                (pd.arr.map((i) => <span key={i.id} >
+                        <a href={i.webformatURL}>
+                            <img id='imgp' src={i.webformatURL} alt="NOT FOUND" width={'200px'}/>
+                            </a>
+                </span>))
+                }
+                </div>
             </center>
         </>
     )

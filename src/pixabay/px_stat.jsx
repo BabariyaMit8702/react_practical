@@ -5,14 +5,20 @@ import { useEffect } from 'react';
 export const Pxstat = (props) => {
     let name = 'MIT';
     let caste = 'YADAV';
-    const [pxc, setpxc] = useState('london');
+    const [pxc, setpxc] = useState('');
     const [arr, setarr] = useState([])
     
     useEffect(() => {
         async function call(q) {
+            let url = '';
             try{
-            let url = `https://pixabay.com/api/?key=51641570-66eef2b40b276fb37a30a87a7&q=${q}&image_type=photo`
-            let response = await fetch(url);
+                if(pxc==''){
+                     url = `https://pixabay.com/api/?key=51641570-66eef2b40b276fb37a30a87a7&q=Lord Ganesh Dada&image_type=photo`
+                }else{
+                     url = `https://pixabay.com/api/?key=51641570-66eef2b40b276fb37a30a87a7&q=${q}&image_type=photo`
+                }
+
+             let response = await fetch(url);
             let data = await response.json();
             setarr(data.hits)
         }catch (e) {

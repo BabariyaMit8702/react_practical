@@ -157,3 +157,11 @@
   background-color: #ffffff33;
   border-radius: 4px;
 }
+#pxcont{
+  width: 1000px;
+}
+#imgp{
+    border: yellow 2px solid;
+    border-radius: 5%;
+    margin: 20px;
+}
