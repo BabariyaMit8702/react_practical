@@ -3,7 +3,7 @@ import { useState } from 'react'
 import '../App.css'
 
 export const Piixanavbar = () => {
-
+        document.title = 'PIXABAY'
     return (
         <>
         
