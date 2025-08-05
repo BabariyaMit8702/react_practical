@@ -3,11 +3,14 @@ import '../App.css'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 
 export const Mn = () => {
     const [login, setlogin] = useState(false)
     let navigate = useNavigate()
+    let l = useLocation()
+
     const Fm = (at) => {
         if(login==true){
             navigate(`/${at}`);
@@ -34,8 +37,12 @@ export const Mn = () => {
                 :
                 <button type="button" onClick={li} className="btn btn-outline-warning">LOG-IN</button>
                 }
+                
                 <button type="button" className="btn btn-outline-info"><Link style={{textDecoration:'none',color:'white'}} to={'/'} >Home</Link></button>
-            </div>
+                
+                <button type="button" onClick={() => Fm('pixabay')} className="btn btn-outline-light">PixaApp</button>
+                
+                </div>
             </center>
         </>
     )

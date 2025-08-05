@@ -21,6 +21,7 @@ import { Course_details } from './Mycompanent/course_details'
 import { Mn } from './assets/main_navbars'
 import { Logs } from './Mycompanent/logs'
 import { Demo } from './Mycompanent/demo'
+import { Pixahome } from './pixabay/pixahome'
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Mn/>
       <Routes>
         <Route path='/demo' element={<Demo/>}/>
+        <Route path='/pixabay' element={<Pixahome/>}/>
         <Route path='/api' element={<Fetch />}/>
         <Route path='/' element={<Main_home />} />
         <Route path='/movies' element={<Home />}/>
