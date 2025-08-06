@@ -71,7 +71,11 @@ export const Home2 = () => {
         </hr>
         <input type='text' value={searched} onChange={modser} /><hr></hr>
         <div className='container2'>
-          {loading ? <p>Loading...</p> :
+          {loading ? <p>Loading...
+            <div class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </p> :
             find !== true ? <p>Not-Found</p>
               : menu.map((ml) => <div className='obj' key={ml.idMeal}>
                 <a href={ml.strMealThumb}>
