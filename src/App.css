@@ -164,4 +164,8 @@
     border: yellow 2px solid;
     border-radius: 5%;
     margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+#imgp:hover{
+  transform: scale(1.1);
 }

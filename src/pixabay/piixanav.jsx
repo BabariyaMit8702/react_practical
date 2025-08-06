@@ -40,6 +40,16 @@ export const Piixanavbar = () => {
                     <li onClick={() => cc('government')}>
                         <span className="dropdown-icon" /> Government
                     </li>
+                    <li onClick={() => cc('economy')}>
+                        <span className="dropdown-icon" /> Economy
+                    </li><li onClick={() => cc('farming')}>
+                        <span className="dropdown-icon" /> Farming
+                    </li><li onClick={() => cc('bussiness')}>
+                        <span className="dropdown-icon" /> Bussiness
+                    </li>
+                    <li onClick={() => cc('jobs')}>
+                        <span className="dropdown-icon" /> jobs
+                    </li>
                 </ul>
 
             </div>
