@@ -22,7 +22,7 @@ import { Mn } from './assets/main_navbars'
 import { Logs } from './Mycompanent/logs'
 import { Demo } from './Mycompanent/demo'
 import { Pixahome } from './pixabay/pixahome'
-
+import { Test } from './Mycompanent/test_useref'
 
 function App() {
   let name = "Mit Yadav";
@@ -31,6 +31,7 @@ function App() {
     <BrowserRouter>
       <Mn/>
       <Routes>
+        <Route path='/test' element={<Test/>}/>
         <Route path='/demo' element={<Demo/>}/>
         <Route path='/pixabay' element={<Pixahome/>}/>
         <Route path='/api' element={<Fetch />}/>
